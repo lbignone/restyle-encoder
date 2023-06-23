@@ -12,7 +12,13 @@ dataset_paths = {
 	'horse_test': '',
 
 	'afhq_wild_train': '',
-	'afhq_wild_test': ''
+	'afhq_wild_test': '',
+    
+	'eagle_train': '/home/lbignone/Development/stylegan3-editing/data/eagle_galrand_64x64/train',
+	'eagle_test': '/home/lbignone/Development/stylegan3-editing/data/eagle_galrand_64x64/test',
+    
+	'eagle_galface_256x256_train': '/home/lbignone/Development/stylegan3-editing/data/eagle_galface_256x256/train',
+	'eagle_galface_256x256_test': '/home/lbignone/Development/stylegan3-editing/data/eagle_galface_256x256/test',
 }
 
 model_paths = {
