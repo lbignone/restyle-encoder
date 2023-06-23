@@ -1,0 +1,19 @@
+python scripts/train_restyle_psp.py \
+--dataset_type eagle_galface_256x256 \
+--encoder_type ResNetBackboneEncoder \
+--exp_dir experiments/00023-stylegan2-eagle_galface_256x256-gpus4-batch32-gamma2 \
+--batch_size 5 \
+--test_batch_size 5 \
+--workers 8 \
+--test_workers 8 \
+--val_interval 5000 \
+--save_interval 10000 \
+--start_from_latent_avg \
+--lpips_lambda 0.8 \
+--l2_lambda 1 \
+--id_lambda 0 \
+--moco_lambda 0.5 \
+--input_nc 6 \
+--n_iters_per_batch 3 \
+--output_size 256 \
+--stylegan_weights ../stylegan3-editing/pretrained_models/stylegan3_output/00023-stylegan2-eagle_galface_256x256-gpus4-batch32-gamma2/network-snapshot-023000.pt
